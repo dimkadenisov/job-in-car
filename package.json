@@ -8,8 +8,11 @@
     "start": "next start"
   },
   "dependencies": {
+    "final-form": "^4.20.1",
     "next": "9.4.4",
+    "nodemailer": "^6.4.11",
     "react": "16.13.1",
-    "react-dom": "16.13.1"
+    "react-dom": "16.13.1",
+    "react-final-form": "^6.5.1"
   }
 }
