@@ -2,18 +2,11 @@ import https from 'https';
 
 export default async (req, res) => {
   const { body } = req;
-  const {
-    firstName,
-    lastName,
-    phone,
-    birthDate,
-    drivingExperience,
-  } = await JSON.parse(body);
+  const { name, phone, birthDate, drivingExperience } = await JSON.parse(body);
   const msg = encodeURI(`
     <b>Новая заявка с сайта</b>
 
-    <b>Имя:</b> ${firstName}
-    <b>Фамилия:</b> ${lastName}
+    <b>ФИО:</b> ${name}
     <b>Телефон:</b> ${phone}
     <b>Дата рождения:</b> ${birthDate}
     <b>Стаж вождения:</b> ${drivingExperience}
